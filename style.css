@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+body {
+  background: hsl(216, 12%, 8%);
+  font-family: 'Overpass', sans-serif;
+}
+
+.center {
+  display: grid;
+  place-items: center;
+}
+
+.h-100 {
+  height: 100vh;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-1_0 {
+  padding: 1rem 0;
+}
+
+.bdrd-2 {
+  border-radius: 2rem;
+}
+
+.bg-grey {
+  background: hsl(213, 19%, 18%);
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.rate-card {
+  background: radial-gradient(
+    farthest-side at top center,
+    hsl(215, 17%, 15%),
+    hsl(215, 27%, 12%)
+  );
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
+}
+
+.rate-header {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+
+.center-circle {
+  background: hsl(213, 19%, 18%);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+}
+
+.center-circle-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  appearance: none;
+  cursor: pointer;
+}
+
+.center-circle-input:checked {
+  background: hsl(217, 12%, 63%);
+}
+
+form .center-circle:hover {
+  background: hsl(25, 97%, 53%);
+}
+
+.rate-text {
+  color: hsl(217, 12%, 63%);
+  font-weight: 400;
+}
+
+.rate-value {
+  z-index: 10;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+
+fieldset {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: none;
+  border: 0;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.btn:disabled,
+.btn:disabled:hover {
+  cursor: not-allowed;
+  background: hsl(25, 97%, 30%);
+  color: hsl(0, 0%, 50%);
+}
+
+.btn:hover {
+  background: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.hide {
+  display: none !important;
+}
+
+.selection {
+  padding: 0.5rem 1rem;
+  margin: 1rem 0 0;
+  color: hsl(25, 97%, 53%);
+}
+
+.tc {
+  text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 767px) {
+    .rate-card {
+        max-width: 16rem;
+    }
+}
