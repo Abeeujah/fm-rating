@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
 
 body {
   background: hsl(216, 12%, 8%);
-  font-family: 'Overpass', sans-serif;
+  font-family: "Overpass", sans-serif;
 }
 
 .center {
@@ -11,9 +11,12 @@ body {
 }
 
 .h-100 {
-  height: 100vh;
+  min-height: 100vh;
 }
 
+.m-1 {
+  margin-block: 1rem;
+}
 .p-1 {
   padding: 1rem;
 }
@@ -31,7 +34,7 @@ body {
 }
 
 .mb-0 {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .rate-card {
@@ -147,7 +150,7 @@ fieldset {
 }
 
 @media screen and (max-width: 767px) {
-    .rate-card {
-        max-width: 16rem;
-    }
+  .rate-card {
+    max-width: 16rem;
+  }
 }
